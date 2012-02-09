@@ -253,5 +253,11 @@ module Matching
       end
       arr
     end
+
+    def matches
+      @left_matches.map do |left_obj, match|
+        match
+      end 
+    end
   end #class
 end #module
