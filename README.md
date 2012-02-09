@@ -24,7 +24,7 @@ the programmer must handle data from different sources and find commonality betw
 To illustrate how Matching is useful in situations where a database join can
 lead to errors, take the example of reconciling a bank statement against an
 accounting system's transactions. In this example, the bookeeper incorrectly
-recorded a transaction twice and the two Github transactions have different dates.
+recorded the Basecamp transaction twice and the two Github transactions have different dates.
 
 #### Accounting System
 
