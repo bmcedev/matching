@@ -257,7 +257,7 @@ end
 # return a score for the pair as a float. In this case, award 1.0 to each pair whose dates are within two days
 # of each other.
 
-within_two_days = lambda { |l,r| 1.0 if (l.date - r.date).abs <= 2 }
+within_two_days = lambda { |l,r| ((l.date - r.date).abs <= 2 ? 1.0 : 0.0) }
 
 matcher.define do
   join    :amount,  :amount,  1.0
