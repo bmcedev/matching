@@ -265,6 +265,25 @@ matcher.define do
 end
 ```
 
+## Using It
+
+Add to your Gemfile:
+
+``` bash
+gem 'matching', :git => 'git://github.com/btedev/matching.git'
+```
+
+``` bash
+$ bundle install
+```
+
+In your project:
+
+``` ruby
+require 'matching'
+include Matching
+```
+
 ## Comments and Caveats
 
 * The matcher is designed for 1:1 matching. You will need to fork and modify it for any other use.
@@ -278,7 +297,7 @@ assignment is arbitrary. The other left object(s) will be added to the left exce
 * Rspec is your friend. Test your rules in the controlled environment of the test suite before deploying on production data.
 * If you use it, I'd love to know what problem you're applying it to. Besides using it in my company, I also use it for reconciling my bank statement.
 
-## Contributing to matching
+## Contributing
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
