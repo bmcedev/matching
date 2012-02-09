@@ -201,9 +201,9 @@ by join attributes. It then applies comparison rules to create a total score of 
 candidate matches on the right. 
 
 In cases where a match is "contested" because the highest-scored right candidate is already matched, the left object with the highest
-score is awarded the match and the "loser" has a chance to match to its next-highest ranked right object, if any exists. In situations
+score is awarded the match and the "loser" attempts to match its next-highest ranked right object, if any exists. In situations
 where there is no right object with a high enough score to pair, that left object is added to the array of left exceptions. Right exceptions
-are created from the array of right objects that fail to pair with any left object.
+are the array of right objects that fail to pair with any left object.
 
 ## Describing match pairs
 
