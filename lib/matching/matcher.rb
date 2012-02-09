@@ -168,7 +168,10 @@ module Matching
       right_objects = []
 
       @join_pairs.each do |jp|
-        matches = @right_index.get(jp.right_attr, left_obj.send(jp.left_attr))
+        left_val = left_obj.send(jp.left_attr)
+        next if left_val.nil? || left_val == ''
+
+        matches = @right_index.get(jp.right_attr, left_val)
         right_objects = right_objects | matches if matches
       end
 
