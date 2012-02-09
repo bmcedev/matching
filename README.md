@@ -286,12 +286,13 @@ include Matching
 
 ## Comments and Caveats
 
-* The matcher is designed for 1:1 matching. You will need to fork and modify it for any other use.
-Check out fuzzy_match for a different approach to rich, rules-based searching: https://github.com/seamusabshere/fuzzy_match
+* This is designed for 1:1 matching. You will need to fork and modify it for any other use.
+Check out fuzzy_match for a different approach to rich, rules-based searching: https://github.com/seamusabshere/fuzzy_match.
+FEBRL is another free data linking library written in Python: http://sourceforge.net/projects/febrl/.
 * Every object will be allocated to one of three resulting arrays: matches, left exceptions, and right exceptions. 
-* There is no magic behind its decisions. Every object from the left store will be matched with the highest-possible
-scoring match from the right store according to the rules you supply it.
-* Use negative scores to decrease the liklihood of pairing.
+* Fuzzy != magic. Every object from the left store will be matched with the highest-possible
+scoring match from the right store according to the rules you supply the matcher.
+* You can use negative scores to decrease the liklihood of pairing.
 * In cases where two or more left objects match the same right object with the same score, the object chosen for final match
 assignment is arbitrary. The other left object(s) will be added to the left exceptions array.
 * Rspec is your friend. Test your rules in the controlled environment of the test suite before deploying on production data.
