@@ -238,20 +238,20 @@ module Matching
 
     def exceptions(side)
       if side == :left 
-        store = @left_store
-        matches = @left_matches
+        store, matches = @left_store, @left_matches
       else 
-        store = @right_store
-        matches = @right_matches
+        store, matches = @right_store, @right_matches
       end
 
       arr = []
-      store.each do |obj|
-        arr << obj unless matches[obj]
+      if arr.class == ArrayStore
+        arr = store.arr - matches
+      else
+        store.each do |obj|
+          arr << obj unless matches[obj]
+        end
       end
       arr
     end
-
   end #class
-
 end #module

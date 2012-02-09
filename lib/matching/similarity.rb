@@ -1,4 +1,5 @@
 require 'text/levenshtein'
+require 'date'
 
 # Adds fuzzy methods to standard classes for
 # comparing two instances on a rules-based scale

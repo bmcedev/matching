@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "matching"
   gem.homepage = "http://github.com/btedev/matching"
-  gem.license = ""
+  gem.license = "MIT license"
   gem.summary = "Dataset matching engine"
   gem.description = ""
   gem.email = "barrye@gmail.com"

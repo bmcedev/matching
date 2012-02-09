@@ -9,20 +9,18 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Barry Ezell}]
-  s.date = %q{2011-10-26}
+  s.date = %q{2012-02-08}
   s.description = %q{}
   s.email = %q{barrye@gmail.com}
   s.extra_rdoc_files = [
-    "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     ".document",
     ".rspec",
     "Gemfile",
     "Gemfile.lock",
-    "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "VERSION",
     "lib/matching.rb",
@@ -40,13 +38,13 @@ Gem::Specification.new do |s|
     "spec/lib/ar_spec.rb",
     "spec/lib/deduplicator_spec.rb",
     "spec/lib/matcher_spec.rb",
-    "spec/lib/matcher_spec_helper.rb",
     "spec/lib/redis_spec.rb",
     "spec/lib/similarity_spec.rb",
-    "spec/samples/agent_recs.csv"
+    "spec/samples/agent_recs.csv",
+    "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/btedev/matching}
-  s.licenses = [%q{}]
+  s.licenses = [%q{MIT license}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.7}
   s.summary = %q{Dataset matching engine}
@@ -56,26 +54,17 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<text>, [">= 0"])
-      s.add_development_dependency(%q<rspec>, [">= 0"])
-      s.add_development_dependency(%q<fuubar>, [">= 0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
+      s.add_development_dependency(%q<bundler>, [">= 0"])
+      s.add_development_dependency(%q<jeweler>, [">= 0"])
     else
       s.add_dependency(%q<text>, [">= 0"])
-      s.add_dependency(%q<rspec>, [">= 0"])
-      s.add_dependency(%q<fuubar>, [">= 0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
-      s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency(%q<bundler>, [">= 0"])
+      s.add_dependency(%q<jeweler>, [">= 0"])
     end
   else
     s.add_dependency(%q<text>, [">= 0"])
-    s.add_dependency(%q<rspec>, [">= 0"])
-    s.add_dependency(%q<fuubar>, [">= 0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
-    s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency(%q<bundler>, [">= 0"])
+    s.add_dependency(%q<jeweler>, [">= 0"])
   end
 end
 
