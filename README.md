@@ -214,7 +214,7 @@ object would kill performance for large datasets.
 
 ``` ruby
 # Join "amount" from both the left and right data stores and award a 1.0 to each pairing
-match.define do
+matcher.define do
   join  :amount,  :amount,  1.0
 end
 ```
@@ -226,7 +226,7 @@ must be satisfied in order for a pair to be awarded a score. Scores are additive
 # Join on first and last names, giving higher weight to the last name
 # This is analogous to a database OR join (not AND). Later scoring will link only
 # the highest-scoring pair.
-match.define do
+matcher.define do
   join  :first,   :first_name,  0.5
   join  :last,    :last_name,   1.0
 end
