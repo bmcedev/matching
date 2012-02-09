@@ -17,8 +17,7 @@ statement.
 
 This library is not a replacement for database joins on a
 properly-designed RDBMS. It's designed for real-world situations where
-the programmer must handle data from different sources that are nonetheless
-similar. 
+the programmer must handle data from different sources and find commonality between them.
 
 ## Example
 
