@@ -276,7 +276,7 @@ scoring match from the right store according to the rules you supply it.
 * In cases where two or more left objects match the same right object with the same score, the object chosen for final match
 assignment is arbitrary. The other left object(s) will be added to the left exceptions array.
 * Rspec is your friend. Test your rules in the controlled environment of the test suite before deploying on production data.
-* If you use it, I'd love to know what problem you're applying it to. Besides use it in my company, I also use it for reconciling my bank statement.
+* If you use it, I'd love to know what problem you're applying it to. Besides using it in my company, I also use it for reconciling my bank statement.
 
 ## Contributing to matching
  
