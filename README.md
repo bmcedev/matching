@@ -64,7 +64,7 @@ recorded a transaction twice and the two Github transactions have different date
   </tr>
 </table>
 
-If using a database approach, you might load the datasets into two tables,
+Using a database approach, you might load the datasets into two tables,
 "ledger" and "bank" then join on amount:
 
 ``` sql
