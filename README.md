@@ -205,7 +205,7 @@ score is awarded the match and the "loser" attempts to match its next-highest ra
 where there is no right object with a high enough score to pair, that left object is added to the array of left exceptions. Right exceptions
 are the array of right objects that fail to pair with any left object.
 
-## Describing match pairs
+## Defining match pairs
 
 At least one join (exact match) pair must be defined. My company uses this system for analyzing data with serialized values. In our experience, record pairs with no exact matches are typically low-quality matches and are
 best left for a manual review process. Also, without the benefit of indexing, comparing every left object against every right
